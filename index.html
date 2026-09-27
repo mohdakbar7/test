@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lionel Messi — The Magic of Number 10</title>
+<meta name="description" content="An interactive tribute to Lionel Messi. Move your cursor — he's looking back." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#moments">Skip to content</a>
+<div id="grain" aria-hidden="true"></div>
+
+<!-- ============================= NAV ============================= -->
+<nav class="nav" aria-label="Primary">
+  <a href="#" class="nav-mark">LM<span>10</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#top">Home</a></li>
+    <li><a href="#moments">Moments</a></li>
+    <li><a href="#legacy">Legacy</a></li>
+    <li><a href="#your-moments">Your Moments</a></li>
+    <li><a href="#farewell">Farewell</a></li>
+  </ul>
+
+  <div class="nav-status" role="status">
+    <span class="dot" aria-hidden="true"></span>
+    <span class="label">Tracking</span>
+  </div>
+
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+</nav>
+
+<!-- ============================= HERO ============================= -->
+<section class="hero" id="top">
+  <div class="hero-rays" aria-hidden="true"></div>
+  <div class="hero-type" aria-hidden="true">MESSI</div>
+
+  <div class="hero-portal">
+    <video id="bg-video" preload="auto" muted playsinline aria-label="Interactive character that looks toward your cursor">
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="hero-copy">
+    <p class="hero-kicker">The magic of number 10</p>
+    <h1 class="hero-title">LIONEL<br />MESSI</h1>
+    <p class="hero-sub">An interactive tribute. Wherever your cursor goes, he's watching.</p>
+  </div>
+
+  <div class="hero-hint">
+    <span class="hint-cursor" aria-hidden="true"></span>
+    <span>Move your cursor</span>
+  </div>
+
+  <!-- <div class="hero-webcam">
+    <button type="button" id="eye-tracking-toggle" class="btn btn-ghost btn-small" aria-pressed="false">
+      Enable eye tracking
+    </button>
+    <p class="webcam-note">Optional. Camera processing stays in your browser — nothing is ever uploaded.</p>
+  </div> -->
+</section>
+
+<!-- ======================= ICONIC MOMENTS ======================== -->
+<section class="section" id="moments">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Section 01</p>
+      <h2>Iconic Moments</h2>
+      <p>The nights that defined an era.</p>
+    </div>
+
+    <div class="moments-grid">
+      <article class="moment-card reveal" style="--card-a:#2c4a78;--card-b:#0d1730;">
+        <span class="moment-year">2009</span>
+        <img src="2009.jpg" alt="treble image" style="align-items: center; justify-content: center;">
+        <div class="moment-sweep" aria-hidden="true"></div>
+        <div class="moment-body">
+          <p class="moment-tag">Barcelona · La Liga &amp; Champions League</p>
+          <h3 class="moment-title">The Treble Season</h3>
+          <p class="moment-desc">Under Pep Guardiola, Messi anchored a Barcelona side that swept every major trophy in sight — the season that announced his arrival among the game's greats.</p>
+        </div>
+      </article>
+
+      <article class="moment-card reveal" style="--card-a:#375d8c;--card-b:#0e1a33;">
+        <span class="moment-year">2011</span>
+        <img src="images.jpg" style="align-items: center; justify-content: center;">
+        <div class="moment-sweep" aria-hidden="true"></div>
+        <div class="moment-body">
+          <p class="moment-tag">Champions League Final · Wembley</p>
+          <h3 class="moment-title">Kings of Europe, Again</h3>
+          <p class="moment-desc">A dominant European final performance against Manchester United, with Messi at the heart of Barcelona's football at its most complete.</p>
+        </div>
+      </article>
+
+      <article class="moment-card reveal" style="--card-a:#2c4a78;--card-b:#0d1730;">
+        <span class="moment-year">2015</span>
+        <div class="moment-sweep" aria-hidden="true"></div>
+        <div class="moment-body">
+          <p class="moment-tag">Barcelona · MSN Era</p>
+          <h3 class="moment-title">A Second Treble</h3>
+          <p class="moment-desc">Alongside Suárez and Neymar, Messi drove Barcelona to a second treble-winning campaign, cementing one of football's most feared attacking trios.</p>
+        </div>
+      </article>
+
+      <article class="moment-card reveal" style="--card-a:#5b8ec4;--card-b:#123056;">
+        <span class="moment-year">2021</span>
+        <div class="moment-sweep" aria-hidden="true"></div>
+        <div class="moment-body">
+          <p class="moment-tag">Copa América · Maracanã</p>
+          <h3 class="moment-title">The First Title with Argentina</h3>
+          <p class="moment-desc">A long-awaited major trophy with the national team, lifted on Brazilian soil — the turning point of his international story.</p>
+        </div>
+      </article>
+
+      <article class="moment-card reveal" style="--card-a:#75aadb;--card-b:#153357;">
+        <span class="moment-year">2022</span>
+        <div class="moment-sweep" aria-hidden="true"></div>
+        <div class="moment-body">
+          <p class="moment-tag">FIFA World Cup · Qatar</p>
+          <h3 class="moment-title">Golden Ball, Golden Run</h3>
+          <p class="moment-desc">A tournament-long masterclass through the knockout rounds, earning the Golden Ball as the competition's outstanding player.</p>
+        </div>
+      </article>
+
+      <article class="moment-card reveal" style="--card-a:#8db8e3;--card-b:#1a3a60;">
+        <span class="moment-year">2022</span>
+        <div class="moment-sweep" aria-hidden="true"></div>
+        <div class="moment-body">
+          <p class="moment-tag">World Cup Final · Lusail</p>
+          <h3 class="moment-title">Champion of the World</h3>
+          <p class="moment-desc">A final for the ages against France, decided on penalties — the trophy that completed a career and a nation's 36-year wait.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= LEGACY ============================ -->
+<section class="section" id="legacy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Section 02</p>
+      <h2>The Legacy</h2>
+      <p>Two decades at the top of the game, told in titles.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-row reveal">
+        <div class="timeline-number" data-count="8">00</div>
+        <div class="timeline-info">
+          <h3>Ballon d'Or</h3>
+          <p>The most of any player in the award's history.</p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-number" data-count="1">00</div>
+        <div class="timeline-info">
+          <h3>FIFA World Cup</h3>
+          <p>Argentina, 2022 — the trophy that closed the debate.</p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-number" data-count="2">00</div>
+        <div class="timeline-info">
+          <h3>Copa América</h3>
+          <p>Continental champion with Argentina in 2021 and 2024.</p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-number" data-count="4">00</div>
+        <div class="timeline-info">
+          <h3>UEFA Champions League</h3>
+          <p>Four European titles across two Barcelona treble-winning sides.</p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-number" data-count="10">00</div>
+        <div class="timeline-info">
+          <h3>La Liga</h3>
+          <p>A decade of domestic dominance with FC Barcelona.</p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-number" data-count="3">00</div>
+        <div class="timeline-info">
+          <h3>FIFA Club World Cup</h3>
+          <p>Won with Barcelona in 2009, 2011 and 2015.</p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="timeline-number" data-count="1">00</div>
+        <div class="timeline-info">
+          <h3>Olympic Gold</h3>
+          <p>Beijing, 2008 — champion with Argentina's Olympic team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= YOUR MESSI MOMENTS ======================= -->
+<section class="section" id="your-moments">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Section 03</p>
+      <h2>Your Messi Moments</h2>
+      <p>Bring your own memories. Your video stays in your browser — nothing is uploaded anywhere.</p>
+    </div>
+
+    <div class="uploader reveal" id="uploader">
+      <div class="uploader-empty">
+        <div class="uploader-icon" aria-hidden="true">↑</div>
+        <h3>Drop a video here</h3>
+        <p>Or choose a file from your device — MP4, MOV, WebM.</p>
+        <button class="btn" id="upload-browse" type="button">Upload video</button>
+        <input type="file" id="upload-input" accept="video/*" class="visually-hidden" aria-label="Choose a video file" />
+      </div>
+
+      <div class="upload-preview" id="upload-preview">
+        <video id="upload-preview-video" playsinline aria-label="Your uploaded video"></video>
+        <div class="upload-meta">
+          <div class="fname" id="upload-filename"></div>
+          <div class="fdetails" id="upload-filedetails"></div>
+          <div class="upload-controls">
+            <button type="button" id="upload-play">Play</button>
+            <button type="button" id="upload-remove">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAREWELL ============================ -->
+<section id="farewell" aria-labelledby="farewell-title">
+  <div class="farewell-rays" aria-hidden="true"></div>
+  <div class="farewell-type" aria-hidden="true">GRACIAS</div>
+  <div id="farewell-particles" aria-hidden="true"></div>
+
+  <div class="farewell-content">
+    <p class="eyebrow">Section 04</p>
+    <p class="farewell-line">Some players play the game. Some players change it forever.</p>
+    <h2 class="farewell-title" id="farewell-title">Gracias, Leo.</h2>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer>
+  <div>
+    <div class="footer-mark">M10</div>
+    <div class="footer-name">LIONEL MESSI</div>
+  </div>
+  <p class="footer-note">An unofficial fan tribute. Not affiliated with Lionel Messi or FC Barcelona.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
